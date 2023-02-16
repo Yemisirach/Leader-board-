@@ -76,6 +76,7 @@ form {
   color: rgb(47, 46, 46);
   font-weight: 600;
 }
+
 .addleaderboard {
   display: flex;
   flex-direction: column;
@@ -99,6 +100,7 @@ button,
   height: 6%;
   cursor: pointer;
 }
+
 #refreshBtn {
   background-color: rgb(155, 175, 230);
   color: rgb(47, 46, 46);
@@ -108,6 +110,7 @@ button,
 .table-body:nth-child(odd) {
   background-color: rgb(218, 214, 214);
 }
+
 .table-body:nth-child(even) {
   background-color: rgb(155, 175, 230);
 }
@@ -143,7 +146,6 @@ nav {
 
 .nav-logo {
   text-decoration: none;
-  color: black;
   font-size: 1.3rem;
   padding: 1% 5%;
   color: wheat;
@@ -172,10 +174,12 @@ footer {
   height: 0.5rem;
   align-items: center;
 }
+
 footer h3 {
   font-weight: 200;
   color: black;
 }
+
 @media (max-width: 768px) {
   main {
     width: 100%;
@@ -184,6 +188,7 @@ footer h3 {
     display: flex;
     flex-direction: column;
   }
+
   .recent {
     width: 320px;
     margin: auto;
@@ -226,7 +231,7 @@ footer h3 {
   }
 
   .nav-logo {
-    font-size: 2;
+    font-size: 2rem;
   }
 
   footer {
