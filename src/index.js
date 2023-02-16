@@ -29,7 +29,6 @@ form.addEventListener('submit', async (e) => {
   }, 2000);
 });
 
-refreshBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+refreshBtn.addEventListener('click', () => {
   getAllScores();
 });
