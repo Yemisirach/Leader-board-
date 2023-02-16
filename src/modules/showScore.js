@@ -1,4 +1,4 @@
-const main = document.querySelector("main");
+const main = document.querySelector('main');
 
 const showScore = () => {
   main.innerHTML = `<div class="LeaderBoard-list">

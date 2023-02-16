@@ -21,6 +21,11 @@ body {
   margin: auto;
   padding-left: 0;
 }
+
+li {
+  cursor: pointer;
+}
+
 .table-body {
   width: 400px;
   border: 2px solid rgb(39, 37, 37);
@@ -28,11 +33,14 @@ body {
   margin: auto;
   padding-left: 0;
   list-style: none;
+
   /* height: 250px; */
 }
+
 .table-body li {
   padding: 0.2rem;
 }
+
 .recent {
   display: flex;
   align-items: center;
@@ -62,10 +70,6 @@ form {
   border-radius: 8px;
 }
 
-li {
-  cursor: pointer;
-}
-
 .score-list li {
   display: flex;
   padding: 5px 10px;
@@ -87,9 +91,11 @@ button,
 .table-body:nth-child(odd) {
   background-color: rgb(218, 214, 214);
 }
+
 li:nth-child(odd) {
   background-color: rgb(218, 214, 214);
 }
+
 input {
   padding: 3%;
   border: 1px solid rgb(77, 77, 77);
@@ -146,7 +152,6 @@ h2 {
 footer {
   padding: 1%;
   background-color: rgb(145, 143, 140);
-  height: 20px;
   display: flex;
   justify-content: space-between;
   height: 0.2rem;

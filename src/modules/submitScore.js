@@ -1,5 +1,5 @@
-import axios from "axios";
-import API_SCORES_URL from "./request.js";
+import axios from 'axios';
+import API_SCORES_URL from './request.js';
 
 const submitScore = async (score) => {
   try {

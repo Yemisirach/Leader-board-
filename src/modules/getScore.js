@@ -1,6 +1,6 @@
-import axios from "axios";
-import API_SCORES_URL from "./request.js";
-import displayScores from "./displayScore.js";
+import axios from 'axios';
+import API_SCORES_URL from './request.js';
+import displayScores from './displayScore.js';
 
 const getAllScores = async () => {
   try {
