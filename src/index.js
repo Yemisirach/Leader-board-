@@ -32,5 +32,4 @@ form.addEventListener('submit', async (e) => {
 refreshBtn.addEventListener('click', (e) => {
   e.preventDefault();
   getAllScores();
-  console.log(getAllScores());
 });
