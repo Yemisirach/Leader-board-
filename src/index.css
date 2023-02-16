@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 body {
-  padding: 1% 5%;
   height: 90vh;
   font-family: "Architects Daughter", cursive;
   font-weight: 900;
@@ -23,10 +22,30 @@ body {
   padding-left: 0;
 }
 
+li {
+  cursor: pointer;
+}
+
+.table-body {
+  width: 400px;
+  border: 2px solid rgb(39, 37, 37);
+  border-radius: 3px;
+  margin: auto;
+  padding-left: 0;
+  list-style: none;
+
+  /* height: 250px; */
+}
+
+.table-body li {
+  padding: 0.2rem;
+}
+
 .recent {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 form {
@@ -51,10 +70,6 @@ form {
   border-radius: 8px;
 }
 
-li {
-  cursor: pointer;
-}
-
 .score-list li {
   display: flex;
   padding: 5px 10px;
@@ -73,6 +88,10 @@ button,
   cursor: pointer;
 }
 
+.table-body:nth-child(odd) {
+  background-color: rgb(218, 214, 214);
+}
+
 li:nth-child(odd) {
   background-color: rgb(218, 214, 214);
 }
@@ -84,8 +103,8 @@ input {
 }
 
 main {
-  width: 70%;
-  height: 70%;
+  width: 60%;
+  height: 520px;
   margin: auto;
   display: flex;
 }
@@ -99,33 +118,42 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 3% 0% 2%;
 }
 
 .nav-logo {
   text-decoration: none;
   color: black;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
+  padding: 1% 5%;
 }
 
 h1,
 h2 {
   text-align: center;
+  margin: 0;
 }
 
-.bookContainer {
-  font-weight: 100;
+#submit {
+  width: 30%;
+  padding: 7px 15px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.success {
+  color: green;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  padding: 2px;
+  display: none;
 }
 
 footer {
   padding: 1%;
-  margin: 20px 0 5px 0;
   background-color: rgb(145, 143, 140);
-}
-
-footer h3 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   height: 0.2rem;
   align-items: center;
 }
