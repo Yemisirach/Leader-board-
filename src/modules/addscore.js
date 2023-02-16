@@ -4,7 +4,7 @@ const addScoresForm = () => {
   main.innerHTML += `
   <div class="addleaderboard">
   <h2>Add Your score</h2>
-  <form action="">
+  <form id="form">
     <input
       type="text"
       name="name"
@@ -18,8 +18,10 @@ const addScoresForm = () => {
       class="form-control"
       id="score"
       placeholder="score"
+      require
     />
-    <button class="add-Btn" id="btn">Add</button>
+    <p class="success">Score successfully added</p>
+    <button type="submit" value="submit" class="add-Btn" id="btn">Add</button>
   </form>
   </div>`;
 };

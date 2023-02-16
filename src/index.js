@@ -1,27 +1,26 @@
 import "./index.css";
-import showScore from "./showScore.js";
-import addScoresForm from "./addscore.js";
-
+import showScore from "./modules/showScore.js";
+import addScoresForm from "./modules/addscore.js";
+import getAllScores from "./modules/getScore.js";
+import submitScore from "./modules/submitScore.js";
 showScore();
 addScoresForm();
-
-const form = document.getElementById("form");
-const userNameInput = document.getElementById("name");
-const scoreInput = document.getElementById("score");
-const refreshBtn = document.getElementById("refreshBtn");
+const form = document.querySelector("form");
+const userNameInput = document.querySelector("#name");
+const scoreInput = document.querySelector("#score");
+const refreshBtn = document.querySelector("#refreshBtn");
 const successTxt = document.querySelector(".success");
 
-base_url = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/";
-
-getAllScore();
+// getAllScores();
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const score = {
-    name: userNameInput.value,
+    user: userNameInput.value,
     score: scoreInput.value,
   };
-
+  userNameInput.value = "";
+  scoreInput.value = "";
   await submitScore(score);
   successTxt.style.display = "block";
   setTimeout(() => {
@@ -29,6 +28,8 @@ form.addEventListener("submit", async (e) => {
   }, 2000);
 });
 
-refreshBtn.addEventListener("click", () => {
-  getAllScore();
+refreshBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  getAllScores();
+  console.log(getAllScores());
 });

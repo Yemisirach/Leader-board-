@@ -1,4 +1,0 @@
-let Person = {
-  name: "",
-  score: "",
-};
