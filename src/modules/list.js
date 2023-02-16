@@ -1,0 +1,4 @@
+let Person = {
+  name: "",
+  score: "",
+};
