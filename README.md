@@ -36,7 +36,7 @@
 
 ## Live Demo
 
-[Go Live](https://yemisirach.github.io/Leade-board/dist/)
+[Go Live](https://yemisirach.github.io/Leader-board-/dist/)
 
 ## Getting Started
 
