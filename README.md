@@ -1,7 +1,5 @@
 # Leader-board-
 
-# To-Do-list.
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
